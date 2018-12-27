@@ -1,0 +1,33 @@
+.header {
+	background: $gray;
+	width: 100%;
+	color: $white;
+	position: fixed;
+	z-index: 1;
+
+	&__btn {
+		margin-bottom: 10px;
+		background: transparent;
+		border: 1px solid $white;
+		padding: 8px 25px;
+		color: $white;
+		font-size: 18px;
+	}
+
+	&__compare {
+		display: flex;
+		padding: 10px 0;
+		align-items: center;
+	}
+
+	&__img {
+		max-width: 70px;
+		max-height: 90px;
+		object-fit: contain;
+	}
+
+	&--is-hidden {
+		display: none;
+		transition: .3s;
+	}
+}

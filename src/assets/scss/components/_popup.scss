@@ -1,0 +1,50 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    width: 100%;
+    padding: 30px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    @include respond-to(medium) {
+        top: 73px;
+    }
+
+    &__active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+
+        @include respond-to(medium) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        font-size: 30px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include respond-to(medium) {
+            top: 30px;
+        }
+    }
+
+    & .product__txt {
+        display: none;
+    }
+
+    & .product__year {
+        display: block;
+    }
+}

@@ -1,0 +1,23 @@
+p {
+	font: {
+		family: $basic-font;
+		size: 20px;
+	}
+}
+
+span {
+	font: {
+		family: $basic-font;
+		size: 20px;
+	}
+}
+
+h1,
+h2 {
+	color: $white;
+	font: {
+		family: $basic-font;
+		size: 25px;
+		weight: 400;
+	}
+}
