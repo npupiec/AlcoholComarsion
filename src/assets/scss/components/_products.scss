@@ -1,0 +1,41 @@
+.products {
+    &__list {
+		padding: 8px 20px;
+		background-color: $black;
+		border: 1px solid $white;
+		color: $white;
+		font-size: 16px;
+		margin-left: 10px;
+		background-color: $black;
+	}
+	
+	&__txt {
+		color: $white;
+	}
+
+	&__conf {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 0;
+
+		@include respond-to(medium) {
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+
+	&__input {
+		padding: 10px 20px;
+	}
+
+	&__select {
+		padding: 8px 10px;
+		margin-left: 10px;
+	}
+
+	&__cat {
+		margin: 10px 0;
+	}
+}

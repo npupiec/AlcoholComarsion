@@ -1,0 +1,15 @@
+.idea/
+.vs/
+.directory/
+.editorconfig/
+
+node_modules/
+
+dist/
+public/
+stylesheets/
+logs/
+
+npm-debug.log
+
+gulp-cli

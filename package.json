@@ -1,0 +1,45 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "start:init": "npm install && gulp clean && gulp",
+    "build": "npm run build:prod",
+    "build:dev": "gulp clean && gulp",
+    "build:prod": "gulp clean && gulp --prod"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "Nina Pupiec",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.38",
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015-rollup": "^1.0.0",
+    "babel-preset-stage-3": "^6.5.0",
+    "browser-sync": "^2.23.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-util": "^3.0.8",
+    "panini": "^1.5.1",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-stream": "^1.24.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp-cli": "^2.0.0",
+    "reset-css": "^2.2.0"
+  }
+}
